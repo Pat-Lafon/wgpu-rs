@@ -2,9 +2,18 @@
 
 layout(location = 0) out vec3 v_Uv;
 
+/*
 layout(set = 0, binding = 0) uniform Data {
   mat4 proj;
   mat4 view;
+};
+*/
+
+layout(set = 0, binding = 0) uniform UNIFORM00 {
+      mat4 proj;
+};
+layout(set = 0, binding = 1) uniform UNIFORM01 {
+      mat4 view;
 };
 
 void main() {
